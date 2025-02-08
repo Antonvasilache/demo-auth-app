@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = `AIzaSyBVuiuANYgPujHDKGX1CaanLSDrAxaLlRs`;
+const API_KEY = process.env.EXPO_PUBLIC_API_KEY;
 
 export async function authenticate(
   mode: "signUp" | "signInWithPassword",
